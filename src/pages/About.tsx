@@ -59,8 +59,8 @@ const items = [
 export default function About() {
     return(
         <div>
-            <div className="album" style={{ textAlign: 'center', padding: '20px', marginTop:'120px' }}>
-                Meine Hobbies & Manche Aktivitäten
+            <div className="album" style={{ textAlign: 'center', padding: '20px', marginTop:'130px' }}>
+                <h2>Meine Hobbies & Manche Aktivitäten </h2>
 
             <div style={{ position: 'relative' }}>
                 <ChromaGrid

@@ -1,0 +1,119 @@
+.certificates-page {
+  max-width: 1200px;
+  margin-top: 130px;
+  padding: 32px 16px;
+}
+.certificates-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+.certificates-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+@media (max-width: 1100px) {
+  .certificates-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 800px) {
+  .certificates-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.certificate-card {
+  background: rgba(30, 32, 38, 0.85);
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 18px 18px 12px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 320px;
+  border: 1px solid #222;
+}
+.certificate-image {
+  width: 100%;
+  max-width: 220px;
+  height: 155px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 18px;
+  background: #f3f3f3;
+}
+@media (max-width: 500px) {
+  .certificate-image {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1.41 / 1;
+  }
+}
+.certificate-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-align: center;
+  color: #fff;
+}
+.certificate-link {
+  color: #2563eb;
+  font-size: 0.98rem;
+  text-decoration: underline;
+  margin-top: auto;
+  text-align: center;
+}
+.certificate-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.certificate-modal {
+  position: relative;
+  background: #222;
+  padding: 32px 32px 24px 32px;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.25);
+  max-width: 90vw;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certificate-modal-image {
+  max-width: 700px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+}
+.certificate-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 24px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2.2rem;
+  cursor: pointer;
+  line-height: 1;
+}
+@media (max-width: 800px) {
+  .certificate-modal-image {
+    max-width: 95vw;
+  }
+  .certificate-modal {
+    padding: 12vw 2vw 6vw 2vw;
+  }
+}

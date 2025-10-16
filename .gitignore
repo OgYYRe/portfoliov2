@@ -36,3 +36,6 @@ coverage/
 
 # Copilot
 copilot.data.migration*
+
+# Windows system files
+*.ini
