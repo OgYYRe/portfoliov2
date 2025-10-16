@@ -4,9 +4,28 @@
     align-items: center;
     width: 100%;
     padding: 16px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    z-index: 100;
     background: transparent;
+    flex-wrap: wrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.footer-electric {
+    flex: 1 1 180px;
+    min-width: 120px;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 900px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 8px 0;
+    }
+    .footer-electric {
+        width: 100%;
+        max-width: 95vw;
+        min-width: 100px;
+    }
 }

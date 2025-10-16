@@ -1,13 +1,158 @@
 #intro-container {
-    width: 100%;
-    max-width: 800px;
+    flex: 1 1 220px;
+    max-width: 700px;
+    min-width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    margin: 175px auto 0 auto;
-    padding: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
     text-align: justify;
     background: rgba(255, 255, 255, 0.05);
     border-radius: 12px;
+}
+
+.home-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 48px auto 0 auto;
+    min-height: 0;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+
+.profile-img {
+    width: 120px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    display: block;
+    margin: 0;
+    background: #fff;
+    transition: width 0.2s, height 0.2s;
+}
+
+@media (max-width: 900px) {
+    .home-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        min-height: calc(100vh - 80px);
+        padding-bottom: 80px;
+        overflow: auto;
+    }
+    #intro-container {
+        max-width: 95vw;
+        min-width: 100px;
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .profile-img {
+        width: 30vw;
+        height: 40vw;
+        min-width: 100px;
+        min-height: 130px;
+        max-width: 160px;
+        max-height: 210px;
+        border-radius: 14px;
+    }
+    .kontaktformular {
+        max-width: 98vw;
+        padding: 1rem 0.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .profile-img {
+        width: 40vw;
+        height: 54vw;
+        min-width: 80px;
+        min-height: 106px;
+        max-width: 120px;
+        max-height: 160px;
+        border-radius: 12px;
+    }
+    #intro-container {
+        max-width: 95vw;
+        min-width: 100px;
+        width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .kontaktformular {
+        max-width: 98vw;
+        padding: 1rem 0.5rem;
+    }
+}
+
+.contact-row {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.kontaktformular {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: none;
+}
+
+.kontaktformular label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    font-weight: 500;
+}
+
+.kontaktformular input,
+.kontaktformular textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.kontaktformular button {
+    padding: 0.7rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    background: #5227FF;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.kontaktformular button:hover {
+    background: #3a1bb3;
+}
+
+
+.home-page {
+    min-height: 0;
+    box-sizing: border-box;
+    padding-bottom: 0;
+    width: 100%;
+    padding-top: 120px;
 }
