@@ -1,0 +1,38 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Vite
+dist/
+.vite/
+
+# IDE and system files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# TypeScript
+*.tsbuildinfo
+
+# Log files
+*.log
+
+# Env files
+.env
+.env.local
+.env.*.local
+
+# MacOS and Windows
+*.swp
+*.swo
+
+# Other
+coverage/
+
+# Copilot
+copilot.data.migration*
