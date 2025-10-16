@@ -1,0 +1,13 @@
+#intro-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 175px auto 0 auto;
+    padding: 1.5rem;
+    text-align: justify;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+}
