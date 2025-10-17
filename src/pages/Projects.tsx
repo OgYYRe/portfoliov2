@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../css/Projects.css";
 import sertifika from '../assets/projects/sertifika.png';
 import flora from '../assets/projects/flora.png';
-import powerShell from '../assets/projects/powerShell.png';
+import powerShell from '../assets/projects/powershell.png';
 import toDoList from '../assets/projects/toDoList.png';
 
 
