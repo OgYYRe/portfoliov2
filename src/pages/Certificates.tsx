@@ -4,7 +4,7 @@ import ibmCloud from '../assets/certificates/ibm-cloud.png';
 import ibmHtml from '../assets/certificates/ibm-html.png';
 import ibmGit from '../assets/certificates/ibm-git.png';
 import sapCode from '../assets/certificates/sap-codejam.png';
-import React, { useState } from "react";
+import { useState } from "react";
 
 const certificates = [
   {

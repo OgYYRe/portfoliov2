@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../css/Projects.css";
 import sertifika from '../assets/projects/sertifika.png';
 import flora from '../assets/projects/flora.png';
