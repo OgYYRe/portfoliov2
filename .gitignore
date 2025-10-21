@@ -36,6 +36,11 @@ coverage/
 
 # Copilot
 copilot.data.migration*
+copilotDiffState
+copilotDiffState*
+
+# JetBrains IDE
+.idea/
 
 # Windows system files
 *.ini
